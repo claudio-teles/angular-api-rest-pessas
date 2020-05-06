@@ -1,0 +1,13 @@
+<p-toast position="center" key="tl"></p-toast>
+<div class="p-grid">
+    <div class="p-col"></div>
+    <div class="p-coll">
+        <h1>Crie uma conversa definindo um remetente</h1>
+        <div>
+            <label for="remetente">Remetente: </label><input type="text" pInputText [(ngModel)]="email.email_remetente"/><br>
+            <label for="destinatario">Destinatário: </label><label for="valorDestinatario">{{email.email_destinatario}}</label><br>
+            <button pButton type="button" label="Criar Conversa" class="ui-button-raised" (click)="criarUmChat()"></button>
+        </div>
+    </div>
+    <div class="p-col"></div>
+</div>

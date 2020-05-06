@@ -1,0 +1,32 @@
+<p-confirmDialog [style]="{width: '50vw'}"></p-confirmDialog>
+<p-messages [value]="msgs"></p-messages>
+
+<div class="p-grid">
+    <div class="p-col"></div>
+    <div class="p-col">
+        <h1>Detalhe do Usuário Logado</h1>
+        <ng-container *ngIf="_pessoa['idUsuario'] == id; else idDiferente">
+            <div>
+                <h5 for="idUsuario">Id do Usuario: {{ _pessoa['idUsuario'] }}</h5>
+                <h5 for="nome">Nome: {{ _pessoa['nome'] }}</h5>
+                <h5 for="cpf">CPF: {{ _pessoa['cpf'] }}</h5>
+                <h5 for="ativo">Logado: {{ _pessoa['ativo'] }}</h5>
+                <h5 for="regra">Regra: {{ _pessoa['regra'] }}</h5>
+                <h5 for="sexo">Sexo: {{ _pessoa['sexo'] }}</h5>
+                <h5 for="email">E-mail: {{ _pessoa['email'] }}</h5>
+                <h5 for="dataDeNascimento">Data de Nascimento: {{ _pessoa['dataDeNascimento'] | date: 'dd/MM/yyyy'}}</h5>
+                <h5 for="naturalidade">Naturalidade: {{ _pessoa['naturalidade'] }}</h5>
+                <h5 for="nacionalidade">Nacionalidade: {{ _pessoa['nacionalidade'] }}</h5>
+                <h5 for="dataDeCadastro">Data de Cadastro: {{ _pessoa['dataDeCadastro'] | date: 'dd/MM/yyyy'}}</h5>
+                <h5 for="dataDeAtualizacao">Data de Atualização: {{ _pessoa['dataDeAtualizacao'] | date: 'dd/MM/yyyy'}}</h5>
+            </div>
+        </ng-container>
+        <ng-template #idDiferente>
+            <h5>Você só pode ver a sua conta de usuário.</h5>
+        </ng-template>
+        <button type="button" (click)="confirmarDeletar()" pButton icon="pi pi-times" label="Deletar conta"></button><br>
+        <button id="btnAtualizacao" pButton type="button" label="Ír para atualização" class="ui-button-warning" (click)="irParaAtualizacao()"></button><br>
+        <button id="btnPessoas" pButton type="button" label="Ír para lista de usuários" class="ui-button-success" (click)="irParaListaPessoas()"></button>
+    </div>
+    <div class="p-col"></div>
+</div>

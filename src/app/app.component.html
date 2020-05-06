@@ -1,0 +1,7 @@
+<p-breadcrumb [model]="itens" [home]="home"></p-breadcrumb>
+
+<div *ngIf="router.url == '/'">
+    <h1 [ngStyle]="{'text-align': 'center'}">{{mensagem}}</h1>
+</div>
+
+<router-outlet></router-outlet>

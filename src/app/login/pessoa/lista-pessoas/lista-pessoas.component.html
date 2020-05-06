@@ -1,0 +1,17 @@
+<h1 [ngStyle]="{'text-align': 'center'}">Lista de Pessoas no HSQLDB</h1>
+<p-table [value]="pessoas">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-pessoa>
+        <tr>
+            <td title="Clique para criar um chat com o e-mail do destinatário" [ngStyle]="{'cursor': 'pointer'}" (click)="irParaCriarChat(pessoa)" > {{pessoa.idUsuario}}</td>
+            <td title="Clique para criar um chat com o e-mail do destinatário" [ngStyle]="{'cursor': 'pointer'}"  (click)="irParaCriarChat(pessoa)" >{{pessoa.nome}}</td>
+            <td title="Clique para criar um chat com o e-mail do destinatário" [ngStyle]="{'cursor': 'pointer'}"  (click)="irParaCriarChat(pessoa)" >{{pessoa.email}}</td>
+        </tr>
+    </ng-template>
+</p-table>

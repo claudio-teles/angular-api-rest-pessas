@@ -1,0 +1,43 @@
+<p-toast position="top-right" key="tl"></p-toast>
+<div class="p-grid">
+    <div class="p-col"></div>
+    <div class="p-col">
+        <h3 [ngStyle]="{'margin-left': '10px'}">Digite o CPF abaixo, ex: xxx.xxx.xxx-xx; você precisa estar logado.</h3>
+        <div class="ui-g-12 ui-md-4">
+            <div class="ui-inputgroup">
+                <p-inputMask type="text" pInputText placeholder="CPF" mask="999.999.999-99" [(ngModel)]="consultaCpf.cpf" ></p-inputMask>
+                <button pButton type="button" icon="pi pi-refresh" class="ui-button-warn" (click)="pesquisar()"></button>      
+            </div>
+        </div>
+    </div>
+    <div class="p-col"></div>
+</div>
+
+<p-table [value]="usuarios">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Nome</th>
+            <th>Ativo</th>
+            <th>Regra</th>
+            <th>Sexo</th>
+            <th>E-mail</th>
+            <th>Data de Nascimento</th>
+            <th>Naturalidade</th>
+            <th>Nascionalidade</th>
+            <th>CPF</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-usuario>
+        <tr>
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.ativo}}</td>
+            <td>{{usuario.regra}}</td>
+            <td>{{usuario.sexo}}</td>
+            <td>{{usuario.email}}</td>
+            <td>{{usuario.dataDeNascimento | date: 'dd/MM/yyyy'}}</td>
+            <td>{{usuario.naturalidade}}</td>
+            <td>{{usuario.nacionalidade}}</td>
+            <td>{{usuario.cpf}}</td>
+        </tr>
+    </ng-template>
+</p-table>

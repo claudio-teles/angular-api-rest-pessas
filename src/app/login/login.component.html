@@ -1,0 +1,18 @@
+<div class="p-grid">
+    <div class="p-col"></div>
+    <div class="p-col">
+        <h1>Formulário de Login</h1>
+        <p-messages [(value)]="msgs"></p-messages>
+        <h1>Preencha os campos abaixo para fazer o login</h1>
+        <div>
+            <h1>
+                Nome <input type="text" pInputText [(ngModel)]="login.nome"/>
+            </h1>
+            <h1>
+                Senha <input type="password" pPassword [(ngModel)]="login.senha"/>
+            </h1>
+            <button pButton type="button" label="Enviar" (click)="enviarLogin()"></button>
+        </div>
+    </div>
+    <div class="p-col"></div>
+</div>

@@ -1,0 +1,38 @@
+<p-toast position="top-right" key="tl"></p-toast>
+<div class="p-grid">
+    <div class="p-col"></div>
+    <div class="p-col">
+        <h1>Formuário de Cadastro</h1>
+        <div>
+            <h3>
+                Nome <input type="text" pInputText [(ngModel)]="cadastro.nome"/>
+            </h3>
+            <h3>
+                Senha <input type="password" pPassword [(ngModel)]="cadastro.senha"/>
+            </h3>
+            <h3>
+                CPF <p-inputMask [(ngModel)]="cadastro.cpf" mask="999.999.999-99"></p-inputMask>
+            </h3>
+            <h3>
+                Sexo
+                <p-radioButton [ngStyle]="{'white-space': nowrap}" name="group1" value="masculino" label="Masculino" [(ngModel)]="cadastro.sexo"></p-radioButton>
+                <p-radioButton [ngStyle]="{'white-space': nowrap}" name="group1" value="feminino" label="Feminino" [(ngModel)]="cadastro.sexo"></p-radioButton>
+            </h3>
+            <h3>
+                E-mail <input type="text" pInputText [(ngModel)]="cadastro.email"/>
+            </h3>
+            <h3>
+                Data de Nascimento 
+                <p-calendar [(ngModel)]="value" dateFormat="dd/mm/yy" [monthNavigator]="true" [yearNavigator]="true" yearRange="1970:2050"></p-calendar>
+            </h3>
+            <h3>
+                Naturalidade <input type="text" pInputText [(ngModel)]="cadastro.naturalidade"/>
+            </h3>
+            <h3>
+                Nacionalidade <input type="text" pInputText [(ngModel)]="cadastro.nacionalidade"/>
+            </h3>
+            <button pButton type="button" label="Cadastrar" (click)="cadastrar()"></button>
+        </div>
+    </div>
+    <div class="p-col"></div>
+</div>
