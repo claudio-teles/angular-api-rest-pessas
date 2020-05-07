@@ -13,6 +13,7 @@ import { MessagesModule } from 'primeng/messages';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { TableModule } from 'primeng/table';
 import { ToastModule } from 'primeng/toast';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -55,7 +56,8 @@ import { ConsultaCpfComponent } from './login/pessoa/consulta-cpf/consulta-cpf.c
     ToastModule,
     RadioButtonModule,
     CalendarModule,
-    InputMaskModule
+    InputMaskModule,
+    InputTextareaModule
   ],
   providers: [], //ConfirmationService
   bootstrap: [AppComponent]

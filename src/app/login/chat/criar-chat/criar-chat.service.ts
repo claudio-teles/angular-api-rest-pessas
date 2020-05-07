@@ -14,4 +14,12 @@ export class CriarChatService {
     return this.http.post<Email>(urlEmail.toString(), email)
   }
 
+  enviarMensagem = (urlEnvio: string, mensagem: Email): Observable<Email> => {
+    return this.http.post<Email>(urlEnvio.toString(), mensagem)
+  }
+
+  listarMensagens = (urlMensagens: string): Observable<{}> => {
+    return this.http.get<{}>(urlMensagens.toString())
+  }
+
 }

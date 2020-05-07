@@ -1,0 +1,140 @@
+{
+    "idChat": 30,
+    "remetente": {
+        "idUsuario": 30,
+        "nome": "NomeUm",
+        "senha": "56AA79F8EC9BA47B6A7D37ECF45FF1295DE08922C46514C273B2AE9757B96A9E",
+        "ativo": true,
+        "regra": "usuario",
+        "sexo": "masculino",
+        "email": "email@um.com",
+        "dataDeNascimento": "1965-01-18",
+        "naturalidade": "NomeUm",
+        "nacionalidade": "Brasileiro",
+        "cpf": "000.000.000-01",
+        "dataDeCadastro": "2020-05-01",
+        "dataDeAtualizacao": "2020-05-01"
+    },
+    "destinatario": {
+        "idUsuario": 31,
+        "nome": "NomeDois",
+        "senha": "4C48AE4070E358E3401B87C0A1BCA3577C471687FE24CB77714E045C1622E1CB",
+        "ativo": false,
+        "regra": "usuario",
+        "sexo": "feminino",
+        "email": "email@dois.com",
+        "dataDeNascimento": "1985-01-18",
+        "naturalidade": "NomeDois",
+        "nacionalidade": "Brasileiro",
+        "cpf": "000.000.000-02",
+        "dataDeCadastro": "2020-05-01",
+        "dataDeAtualizacao": "2020-05-01"
+    },
+    "mensagems": [
+        {
+            "idMensagem": 30,
+            "remetente": {
+                "idUsuario": 30,
+                "nome": "NomeUm",
+                "senha": "56AA79F8EC9BA47B6A7D37ECF45FF1295DE08922C46514C273B2AE9757B96A9E",
+                "ativo": true,
+                "regra": "usuario",
+                "sexo": "masculino",
+                "email": "email@um.com",
+                "dataDeNascimento": "1965-01-18",
+                "naturalidade": "NomeUm",
+                "nacionalidade": "Brasileiro",
+                "cpf": "000.000.000-01",
+                "dataDeCadastro": "2020-05-01",
+                "dataDeAtualizacao": "2020-05-01"
+            },
+            "destinatario": {
+                "idUsuario": 31,
+                "nome": "NomeDois",
+                "senha": "4C48AE4070E358E3401B87C0A1BCA3577C471687FE24CB77714E045C1622E1CB",
+                "ativo": false,
+                "regra": "usuario",
+                "sexo": "feminino",
+                "email": "email@dois.com",
+                "dataDeNascimento": "1985-01-18",
+                "naturalidade": "NomeDois",
+                "nacionalidade": "Brasileiro",
+                "cpf": "000.000.000-02",
+                "dataDeCadastro": "2020-05-01",
+                "dataDeAtualizacao": "2020-05-01"
+            },
+            "mensagem": "Mensagem Um",
+            "dataDeEnvio": "2020-05-01"
+        },
+        {
+            "idMensagem": 31,
+            "remetente": {
+                "idUsuario": 30,
+                "nome": "NomeUm",
+                "senha": "56AA79F8EC9BA47B6A7D37ECF45FF1295DE08922C46514C273B2AE9757B96A9E",
+                "ativo": true,
+                "regra": "usuario",
+                "sexo": "masculino",
+                "email": "email@um.com",
+                "dataDeNascimento": "1965-01-18",
+                "naturalidade": "NomeUm",
+                "nacionalidade": "Brasileiro",
+                "cpf": "000.000.000-01",
+                "dataDeCadastro": "2020-05-01",
+                "dataDeAtualizacao": "2020-05-01"
+            },
+            "destinatario": {
+                "idUsuario": 31,
+                "nome": "NomeDois",
+                "senha": "4C48AE4070E358E3401B87C0A1BCA3577C471687FE24CB77714E045C1622E1CB",
+                "ativo": false,
+                "regra": "usuario",
+                "sexo": "feminino",
+                "email": "email@dois.com",
+                "dataDeNascimento": "1985-01-18",
+                "naturalidade": "NomeDois",
+                "nacionalidade": "Brasileiro",
+                "cpf": "000.000.000-02",
+                "dataDeCadastro": "2020-05-01",
+                "dataDeAtualizacao": "2020-05-01"
+            },
+            "mensagem": "Mensagem Dois",
+            "dataDeEnvio": "2020-05-01"
+        },
+        {
+            "idMensagem": 32,
+            "remetente": {
+                "idUsuario": 30,
+                "nome": "NomeUm",
+                "senha": "56AA79F8EC9BA47B6A7D37ECF45FF1295DE08922C46514C273B2AE9757B96A9E",
+                "ativo": true,
+                "regra": "usuario",
+                "sexo": "masculino",
+                "email": "email@um.com",
+                "dataDeNascimento": "1965-01-18",
+                "naturalidade": "NomeUm",
+                "nacionalidade": "Brasileiro",
+                "cpf": "000.000.000-01",
+                "dataDeCadastro": "2020-05-01",
+                "dataDeAtualizacao": "2020-05-01"
+            },
+            "destinatario": {
+                "idUsuario": 31,
+                "nome": "NomeDois",
+                "senha": "4C48AE4070E358E3401B87C0A1BCA3577C471687FE24CB77714E045C1622E1CB",
+                "ativo": false,
+                "regra": "usuario",
+                "sexo": "feminino",
+                "email": "email@dois.com",
+                "dataDeNascimento": "1985-01-18",
+                "naturalidade": "NomeDois",
+                "nacionalidade": "Brasileiro",
+                "cpf": "000.000.000-02",
+                "dataDeCadastro": "2020-05-01",
+                "dataDeAtualizacao": "2020-05-01"
+            },
+            "mensagem": "Mensagem Três",
+            "dataDeEnvio": "2020-05-01"
+        }
+    ]
+}

@@ -5,9 +5,38 @@
         <h1>Crie uma conversa definindo um remetente</h1>
         <div>
             <label for="remetente">Remetente: </label><input type="text" pInputText [(ngModel)]="email.email_remetente"/><br>
-            <label for="destinatario">Destinatário: </label><label for="valorDestinatario">{{email.email_destinatario}}</label><br>
-            <button pButton type="button" label="Criar Conversa" class="ui-button-raised" (click)="criarUmChat()"></button>
+            <label for="destinatario">Destinatário: </label><input type="text" pInputText [(ngModel)]="email.email_destinatario"/><br>
+            <button pButton type="button" label="Criar Conversa" class="ui-button-raised" (click)="criarUmChat()"></button><br>
+            <h3>Id do Chat: {{idChat}}</h3>
+
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText [(ngModel)]="id"> 
+                <label for="float-input">Id Logado</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText [(ngModel)]="idChat"> 
+                <label for="float-input">N° Chat</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText [(ngModel)]="rem"> 
+                <label for="float-input">Id Remetente</label>
+            </span>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText [(ngModel)]="dest"> 
+                <label for="float-input">Id Destinatário</label>
+            </span>
+            <button pButton type="button" label="Listar Mensagens" class="ui-button-raised" (click)="listarMensagens()"></button><br>
+
+
+            <textarea [rows]="5" [cols]="120" [(ngModel)]="email.mensagem" pInputTextarea autoResize="autoResize"></textarea><br>
+            <button pButton type="button" label="Enviar Mensagem" class="ui-button-raised ui-button-success" (click)="enviarUmaMensagem()"></button><br>
         </div>
     </div>
     <div class="p-col"></div>
+</div>
+
+<br>
+
+<div *ngFor="let mensagem of listaMensagens; let i=index">
+    <p>{{mensagem.mensagem}}</p>
 </div>

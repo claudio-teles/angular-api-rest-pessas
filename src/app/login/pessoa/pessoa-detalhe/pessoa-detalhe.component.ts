@@ -70,7 +70,7 @@ export class PessoaDetalheComponent implements OnInit {
   }
 
   irParaAtualizacao = () => {
-    this.router.navigateByUrl('/atualizar/usuario/', {state: this._pessoa})
+    this.router.navigateByUrl('/atualizar/usuario/'+this.id.toString(), {state: this._pessoa})
   }
 
   irParaListaPessoas = () => {

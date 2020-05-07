@@ -1,0 +1,11 @@
+textarea {
+    margin-top: 5px;
+}
+
+td#conteudo-esqueda {
+    text-align: left;
+}
+
+td#conteudo-direia {
+    text-align: right;
+}
